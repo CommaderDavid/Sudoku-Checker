@@ -8,3 +8,4 @@ var col7 = [7, 8, 9, 1, 2, 3, 4, 5, 6];
 var col8 = [8, 9, 1, 2, 3, 4, 5, 6, 7];
 var col9 = [9, 1, 2, 3, 4, 5, 6, 7, 8];
 export var sudoku = [col1, col2, col3, col4, col5, col6, col7, col8, col9];
+// total = 45

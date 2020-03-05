@@ -9,7 +9,8 @@ describe('sudoku board', () => {
   });
 
   test('should check for number in rows to be 1-9, no repeats', () => {
-    var sud = sudoku;
     
+    expect(sudoku[0]).toContainEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+
   });
 });
