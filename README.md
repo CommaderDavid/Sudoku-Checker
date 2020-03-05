@@ -4,9 +4,9 @@
 ### Description
 =
 ### BDD Process
-1. example
-      * **Input**:
-      * **Output**:
+1. Each row contains all numbers from 1 - 9 with no repeats.
+2. Each column contains all numbers from 1 - 9 with no repeats.
+
 ### Setup
 *
 ### Contact
