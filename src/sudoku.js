@@ -15,35 +15,39 @@ const checker = [];
 export function LookRow(col) {
   const testArray = JSON.parse(JSON.stringify(col));
 
-  // console.log(testArray + "before");
-  // testArray.forEach(array => {
-  //   array.sort(function(a, b){return a-b})
-  // });
-  // console.log(testArray + "after");
-
-  const findRow = testArray.map(array => {
-    for (let i = 0; i < array.length; i++) {
-      if (array[i] === 1) {
-        array[i] = 0
-      } else if (array[i] === 2) {
-        array[i] = 0
-      } else if (array[i] === 3) {
-        array[i] = 0
-      } else if (array[i] === 4) {
-        array[i] = 0
-      } else if (array[i] === 5) {
-        array[i] = 0
-      } else if (array[i] === 6) {
-        array[i] = 0
-      } else if (array[i] === 7) {
-        array[i] = 0
-      } else if (array[i] === 8) {
-        array[i] = 0
-      } else if (array[i] === 9) {
-        array[i] = 0
-      }
+  const findPattern = testArray
+  for (var i = 0; i < findPattern.length; i++) {
+    findPattern[i]
+    for (var x = 0; x < array.length; x++) {
+      array[x]
     }
-    return array;
-  });
-  return findRow;
+  }
+
+  // const findRow = testArray.map(array => {
+  //   for (let i = 0; i < array.length; i++) {
+  //     if (array[i] === 1) {
+  //       checker.push(array[i])
+  //       array[i] = 0
+  //       console.log(checker);
+  //     } else if (array[i] === 2) {
+  //       array[i] = 0
+  //     } else if (array[i] === 3) {
+  //       array[i] = 0
+  //     } else if (array[i] === 4) {
+  //       array[i] = 0
+  //     } else if (array[i] === 5) {
+  //       array[i] = 0
+  //     } else if (array[i] === 6) {
+  //       array[i] = 0
+  //     } else if (array[i] === 7) {
+  //       array[i] = 0
+  //     } else if (array[i] === 8) {
+  //       array[i] = 0
+  //     } else if (array[i] === 9) {
+  //       array[i] = 0
+  //     }
+  //   }
+  //   return array;
+  // });
+  // return findRow;
 }

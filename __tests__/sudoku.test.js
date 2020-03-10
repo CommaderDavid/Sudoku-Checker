@@ -16,7 +16,7 @@ describe('LookRow', () => {
   var row2 = LookRow(sud2);
 
   test('should check for number in rows to be 1-9, no repeats', () => {
-    expect(row2[0]).toContainEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    expect(row2[0]).toEqual([0, 0, 0, 0, 0, 0, 0, 0, 0]);
 
   });
 
