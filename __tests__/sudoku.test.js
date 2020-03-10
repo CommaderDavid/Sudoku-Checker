@@ -4,7 +4,6 @@ import { LookRow } from './../src/sudoku.js'
 
 describe('sudoku board', () => {
   const sud = sudoku;
-  const row = LookRow(sud);
 
   test('should find sudoku board', () => {
     expect(sud).toContain(sudoku[0]);

@@ -10,44 +10,24 @@ const col8 = [8, 9, 1, 2, 3, 4, 5, 6, 7];
 const col9 = [9, 1, 2, 3, 4, 5, 6, 7, 8];
 export const sudoku = [col1, col2, col3, col4, col5, col6, col7, col8, col9];
 // total = 45
-const checker = [];
+
 
 export function LookRow(col) {
   const testArray = JSON.parse(JSON.stringify(col));
 
-  const findPattern = testArray
-  for (var i = 0; i < findPattern.length; i++) {
-    findPattern[i]
-    for (var x = 0; x < array.length; x++) {
-      array[x]
+  const findRow = testArray.map(array => {
+    array.sort();
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] === i + 1) {
+        array[i] = 0
+      } else {
+        break;
+      }
+      if (i === 8) {
+        return true;
+      }
     }
-  }
-
-  // const findRow = testArray.map(array => {
-  //   for (let i = 0; i < array.length; i++) {
-  //     if (array[i] === 1) {
-  //       checker.push(array[i])
-  //       array[i] = 0
-  //       console.log(checker);
-  //     } else if (array[i] === 2) {
-  //       array[i] = 0
-  //     } else if (array[i] === 3) {
-  //       array[i] = 0
-  //     } else if (array[i] === 4) {
-  //       array[i] = 0
-  //     } else if (array[i] === 5) {
-  //       array[i] = 0
-  //     } else if (array[i] === 6) {
-  //       array[i] = 0
-  //     } else if (array[i] === 7) {
-  //       array[i] = 0
-  //     } else if (array[i] === 8) {
-  //       array[i] = 0
-  //     } else if (array[i] === 9) {
-  //       array[i] = 0
-  //     }
-  //   }
-  //   return array;
-  // });
-  // return findRow;
+    return array;
+  });
+  return findRow;
 }
